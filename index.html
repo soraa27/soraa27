@@ -362,18 +362,132 @@
     <section id="program" class="section" aria-labelledby="program-title">
       <div class="section-inner">
         <h2 id="program-title">Program</h2>
-        <div class="section-body prose">
-          <p>The workshop program will be published after paper notifications.</p>
-          <dl class="info-list">
-            <div>
-              <dt>Keynote</dt>
-              <dd><span class="tba">TBA</span></dd>
-            </div>
-            <div>
-              <dt>Schedule</dt>
-              <dd><span class="tba">Coming soon</span></dd>
-            </div>
-          </dl>
+        <div class="section-body section-body-wide">
+          <h3 id="schedule-title" class="program-heading">Tentative Full-Day Program</h3>
+          <p class="note program-status">
+            This schedule is tentative. Times and session contents may change once the
+            workshop date and format are confirmed.
+          </p>
+
+          <!--
+            PROGRAM: organizers, edit the schedule here.
+            Each <li class="slot"> is one time slot: a time range plus a title.
+            - Optional: <p class="slot-kind"> for the slot type (e.g. "Session I").
+            - Breaks use class="slot slot-break".
+            - To adapt to a half-day program, change the times and delete or
+              reorder whole <li> elements; no other changes are needed.
+          -->
+          <ol class="schedule" role="list" aria-labelledby="schedule-title">
+            <li class="slot">
+              <p class="slot-time">09:00–09:15</p>
+              <div class="slot-body">
+                <p class="slot-title">Welcome, workshop goals, and introduction</p>
+              </div>
+            </li>
+
+            <li class="slot">
+              <p class="slot-time">09:15–10:00</p>
+              <div class="slot-body">
+                <p class="slot-kind">Invited keynote</p>
+                <p class="slot-title">Software organizations in the era of AI agents</p>
+                <!-- Replace TBA with the speaker's name once confirmed. -->
+                <p class="slot-detail">Keynote speaker: <span class="tba">TBA</span></p>
+              </div>
+            </li>
+
+            <li class="slot">
+              <p class="slot-time">10:00–10:45</p>
+              <div class="slot-body">
+                <p class="slot-kind">Session I</p>
+                <p class="slot-title">Human–agent teams, roles, and organizational coordination</p>
+              </div>
+            </li>
+
+            <li class="slot slot-break">
+              <p class="slot-time">10:45–11:00</p>
+              <div class="slot-body">
+                <p class="slot-title">Coffee break</p>
+              </div>
+            </li>
+
+            <li class="slot">
+              <p class="slot-time">11:00–12:00</p>
+              <div class="slot-body">
+                <p class="slot-kind">Session II</p>
+                <p class="slot-title">Agentic software engineering across the development lifecycle</p>
+              </div>
+            </li>
+
+            <li class="slot slot-break">
+              <p class="slot-time">12:00–13:00</p>
+              <div class="slot-body">
+                <p class="slot-title">Lunch break</p>
+              </div>
+            </li>
+
+            <li class="slot">
+              <p class="slot-time">13:00–14:00</p>
+              <div class="slot-body">
+                <p class="slot-kind">Industry–academia panel</p>
+                <p class="slot-title">Practical adoption, engineering quality, security, and accountability</p>
+              </div>
+            </li>
+
+            <li class="slot">
+              <p class="slot-time">14:00–14:45</p>
+              <div class="slot-body">
+                <p class="slot-kind">Session III</p>
+                <p class="slot-title">Software architecture, trust, governance, and empirical evidence</p>
+              </div>
+            </li>
+
+            <li class="slot slot-break">
+              <p class="slot-time">14:45–15:00</p>
+              <div class="slot-body">
+                <p class="slot-title">Coffee break</p>
+              </div>
+            </li>
+
+            <li class="slot">
+              <p class="slot-time">15:00–16:00</p>
+              <div class="slot-body">
+                <p class="slot-kind">Moderated breakout groups</p>
+                <p class="slot-title">Organizational models, engineering challenges, and evaluation</p>
+                <p class="slot-detail"><a href="#discussions">See the discussion questions</a></p>
+              </div>
+            </li>
+
+            <li class="slot">
+              <p class="slot-time">16:00–16:30</p>
+              <div class="slot-body">
+                <p class="slot-title">Research agenda synthesis, group reports, and closing discussion</p>
+              </div>
+            </li>
+          </ol>
+          <!-- End of program -->
+
+          <h3 id="discussions">Interactive Discussions</h3>
+          <div class="measure">
+            <p>The moderated breakout groups will address three questions:</p>
+            <ol class="goal-list question-list" role="list" aria-labelledby="discussions">
+              <li>
+                <span class="goal-id">1</span>
+                <p>How should human–agent software teams be structured and coordinated?</p>
+              </li>
+              <li>
+                <span class="goal-id">2</span>
+                <p>How should organizations govern autonomous engineering activities across the software lifecycle?</p>
+              </li>
+              <li>
+                <span class="goal-id">3</span>
+                <p>Which empirical methods, metrics, datasets, and benchmarks are needed to evaluate organizational impacts?</p>
+              </li>
+            </ol>
+            <p class="discussion-outcome">
+              The workshop aims to consolidate these discussions into a preliminary
+              community research agenda.
+            </p>
+          </div>
         </div>
       </div>
     </section>
