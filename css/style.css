@@ -12,6 +12,7 @@
   --rule: #d7dce4;
   --tba-bg: #fbf1dc;
   --tba-ink: #6b4a10;
+  --callout-bg: #e9f2f0;
   --focus: #2a5bd7;
 
   --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -37,6 +38,7 @@
     --rule: #2e3644;
     --tba-bg: #3a2f17;
     --tba-ink: #f1d9a6;
+    --callout-bg: #182d2a;
     --focus: #8fb0ff;
     color-scheme: dark;
   }
@@ -53,6 +55,7 @@
   --rule: #2e3644;
   --tba-bg: #3a2f17;
   --tba-ink: #f1d9a6;
+  --callout-bg: #182d2a;
   --focus: #8fb0ff;
   color-scheme: dark;
 }
@@ -625,48 +628,114 @@ a:hover {
   font-weight: 600;
 }
 
+/* About: workshop goals */
+
+.section-body .goals-heading {
+  margin-top: 2.25rem;
+  font-size: 1.375rem;
+}
+
+.goal-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.goal-list li {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr);
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.goal-id {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--agent);
+}
+
+.goal-list p {
+  margin: 0;
+}
+
+.goal-list strong {
+  font-weight: 600;
+}
+
 /* Topics */
 
-.topic-list {
+.section-body-wide {
+  max-width: 52rem;
+}
+
+.topic-grid {
   list-style: none;
   margin: 1.5rem 0 0;
   padding: 0;
   display: grid;
-  gap: 0;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
 }
 
-.topic-list li {
-  padding: 1rem 0 1rem 1.125rem;
-  border-left: 3px solid var(--rule);
+.topic-card {
+  position: relative;
+  padding: 1.125rem 1.25rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
 }
 
-.topic-list li + li {
-  margin-top: 0.25rem;
+.topic-num {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--agent);
 }
 
-.topic-list li:hover {
-  border-left-color: var(--agent);
+.topic-card h3 {
+  margin: 0 0 0.375rem;
+  font-size: 1.1875rem;
+  line-height: 1.25;
 }
 
-.topic-list h3 {
-  font-size: 1.125rem;
-  margin: 0 0 0.25rem;
-}
-
-.topic-list p {
+.topic-card p {
   margin: 0;
+  font-size: 0.9688rem;
   color: var(--ink-muted);
 }
 
 @media (min-width: 40rem) {
-  .topic-list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+  .topic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .topic-list li + li {
-    margin-top: 0;
-  }
+.callout {
+  margin-top: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--callout-bg);
+  border-left: 4px solid var(--agent);
+  border-radius: 0 6px 6px 0;
+}
+
+.callout p {
+  margin: 0;
+}
+
+.callout p + p {
+  margin-top: 0.75rem;
+  color: var(--ink-muted);
+}
+
+.callout p:first-child {
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  line-height: 1.45;
 }
 
 /* Key-value lists (call, program, policies, contact) */
