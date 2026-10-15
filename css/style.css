@@ -587,11 +587,12 @@ a:hover {
   min-width: 0;
 }
 
-.section-body h3 {
+.section-body > h3 {
   margin: 1.75rem 0 0.5rem;
+  font-size: 1.375rem;
 }
 
-.section-body h3:first-child {
+.section-body > h3:first-child {
   margin-top: 0;
 }
 
@@ -632,7 +633,6 @@ a:hover {
 
 .section-body .goals-heading {
   margin-top: 2.25rem;
-  font-size: 1.375rem;
 }
 
 .goal-list {
@@ -736,6 +736,125 @@ a:hover {
   font-family: var(--font-serif);
   font-size: 1.1875rem;
   line-height: 1.45;
+}
+
+/* Call for contributions */
+
+.measure {
+  max-width: var(--measure);
+}
+
+.welcome-intro {
+  margin: 1.5rem 0 0.5rem;
+  font-weight: 500;
+}
+
+.welcome-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.welcome-list li {
+  padding: 0.3125rem 0.75rem;
+  background: var(--callout-bg);
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.section-body .category-grid + h3,
+.section-body .welcome-list + h3 {
+  margin-top: 2.5rem;
+}
+
+.category-grid {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.category-card {
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--primary);
+  border-radius: 6px;
+}
+
+.category-card h4 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.category-length {
+  display: inline-block;
+  margin: 0.5rem 0 0.625rem;
+  padding: 0.0625rem 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.category-card p:last-child {
+  margin: 0;
+  font-size: 0.9688rem;
+  color: var(--ink-muted);
+}
+
+@media (min-width: 40rem) {
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.criteria-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.criteria-list li {
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .criteria-list {
+    columns: 2;
+    column-gap: 2.5rem;
+  }
+
+  .criteria-list li {
+    break-inside: avoid;
+  }
+}
+
+.cfp-submit {
+  margin-top: 2rem;
+}
+
+.cfp-submit .note {
+  margin-top: 0.75rem;
+}
+
+.button-placeholder,
+.button-placeholder:hover {
+  background: transparent;
+  color: var(--ink-muted);
+  border: 1px dashed var(--ink-muted);
+  font: inherit;
+  font-weight: 600;
+  cursor: not-allowed;
 }
 
 /* Key-value lists (call, program, policies, contact) */
