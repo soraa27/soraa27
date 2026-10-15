@@ -943,6 +943,104 @@ a:hover {
   line-height: 1.45;
 }
 
+/* Organizers */
+
+.people-grid {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  gap: 1rem;
+}
+
+.section-body .people-grid + h3 {
+  margin-top: 2.5rem;
+}
+
+.person-card {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr);
+  grid-template-areas:
+    "avatar name"
+    "role role"
+    "affil affil"
+    "email email";
+  align-items: center;
+  grid-template-rows: auto 1fr;
+  column-gap: 0.875rem;
+  align-content: start;
+  padding: 1.125rem 1.25rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+
+/* General Chair: same card, marked by a top accent only */
+.person-card-lead {
+  border-top: 3px solid var(--primary);
+}
+
+/* Filled circles echo the "people" nodes in the hero motif */
+.avatar {
+  grid-area: avatar;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--surface);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.person-card .person-name {
+  grid-area: name;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.person-card p {
+  margin: 0;
+}
+
+.person-card .person-role {
+  grid-area: role;
+  align-self: start;
+  margin-top: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--primary);
+}
+
+.person-card .person-affil {
+  grid-area: affil;
+  align-self: end;
+  margin-top: 0.875rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.person-card .person-email {
+  grid-area: email;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 /* Key-value lists (call, program, policies, contact) */
 
 .info-list {
