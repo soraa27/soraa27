@@ -1041,29 +1041,86 @@ a:hover {
   white-space: nowrap;
 }
 
-/* Key-value lists (call, program, policies, contact) */
+/* Policies */
 
-.info-list {
-  margin: 1.5rem 0 0;
+.policy-list {
   border-top: 1px solid var(--rule);
 }
 
-.info-list > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.25rem 1rem;
-  padding: 0.875rem 0;
+.policy {
+  padding: 1.25rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
-.info-list dt {
+.section-body .policy h3 {
+  margin: 0 0 0.375rem;
+  font-size: 1.1875rem;
+}
+
+.policy p {
+  margin: 0;
+}
+
+.policy p + p {
+  margin-top: 0.5rem;
+}
+
+/* Organizer policy: set apart so prospective authors notice it */
+.policy-notice {
+  margin: 1rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--tba-bg);
+  border: 0;
+  border-left: 4px solid var(--tba-ink);
+  border-radius: 0 6px 6px 0;
+}
+
+.policy-notice h3,
+.policy-notice p {
+  color: var(--ink);
+}
+
+/* Contact */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.section-body .contact-block h3 {
+  margin: 0 0 0.75rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  margin: 0;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  font-style: normal;
+  overflow-wrap: anywhere;
+}
+
+.contact-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
-.info-list dd {
-  margin: 0;
+.contact-card a {
+  margin-top: 0.5rem;
+}
+
+p.contact-card a {
+  margin-top: 0;
+}
+
+.contact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
 }
 
 /* Important dates: a vertical timeline of cards */
