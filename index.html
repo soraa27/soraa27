@@ -308,26 +308,53 @@
     <section id="dates" class="section" aria-labelledby="dates-title">
       <div class="section-inner">
         <h2 id="dates-title">Important Dates</h2>
-        <div class="section-body">
-          <ol class="timeline">
-            <li>
-              <span class="timeline-event">Paper submission deadline</span>
-              <span class="timeline-date"><span class="tba">TBA</span></span>
+        <div class="section-body section-body-wide">
+          <p class="dates-status">All deadlines are subject to final confirmation.</p>
+
+          <!--
+            IMPORTANT DATES: organizers, update the dates here.
+            For each date, change BOTH the visible text and the datetime
+            attribute (format YYYY-MM-DD) so they stay in sync.
+            Do not add a time zone (e.g. AoE) until it is officially confirmed.
+          -->
+          <ol class="date-grid" role="list">
+            <!-- Submission deadline -->
+            <li class="date-card">
+              <p class="date-label">Submission deadline</p>
+              <p class="date-value"><time datetime="2027-02-11">February 11, 2027</time></p>
             </li>
-            <li>
-              <span class="timeline-event">Notification of acceptance</span>
-              <span class="timeline-date"><span class="tba">TBA</span></span>
+
+            <!-- Acceptance notification -->
+            <li class="date-card">
+              <p class="date-label">Acceptance notification</p>
+              <p class="date-value"><time datetime="2027-03-18">March 18, 2027</time></p>
             </li>
-            <li>
-              <span class="timeline-event">Camera-ready deadline</span>
-              <span class="timeline-date"><span class="tba">TBA</span></span>
+
+            <!-- Camera-ready deadline -->
+            <li class="date-card">
+              <p class="date-label">Camera-ready deadline</p>
+              <p class="date-value"><time datetime="2027-04-08">April 8, 2027</time></p>
             </li>
-            <li>
-              <span class="timeline-event">Workshop</span>
-              <span class="timeline-date">July 2027 <span class="tba">Exact date TBA</span></span>
+
+            <!--
+              Workshop day. The exact date is pending FSE'27 workshop allocation.
+              When confirmed, replace "July 2027" with the full date, set
+              datetime to YYYY-MM-DD, and remove the "Exact date TBA" tag and
+              the date-note paragraph. Also update the hero's "Workshop date".
+            -->
+            <li class="date-card date-card-event">
+              <p class="date-label">Workshop</p>
+              <p class="date-value">
+                <time datetime="2027-07">July 2027</time>
+                <span class="tba">Exact date TBA</span>
+              </p>
+              <p class="date-note">
+                The workshop proposal currently anticipates July 11 or July 17, 2027,
+                subject to the final FSE'27 workshop allocation.
+              </p>
             </li>
           </ol>
-          <p class="note">Dates and time zone will be confirmed in the call for contributions.</p>
+          <!-- End of important dates -->
         </div>
       </div>
     </section>
