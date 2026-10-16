@@ -67,9 +67,8 @@ appears.
 
 ### Program committee members
 
-In the `#organizers` section, find the comment
-`Replace "Coming soon" with the PC member list once confirmed` under the
-"Program Committee" heading, and replace the "Coming soon" tag with the list.
+In the `#organizers` section, find the comment `PROGRAM COMMITTEE` and add one
+`<li>` per member (name, then affiliation). List only members who have confirmed.
 
 ### Submission URL
 

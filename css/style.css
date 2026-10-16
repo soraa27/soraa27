@@ -800,6 +800,10 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+.section-body > .topics-context {
+  margin: 1.5rem 0 0;
+}
+
 .topic-num {
   display: block;
   margin-bottom: 0.375rem;
@@ -1206,6 +1210,39 @@ a:hover {
   margin-top: 0.25rem;
   font-size: var(--text-sm);
   overflow-wrap: anywhere;
+}
+
+/* Program committee */
+
+.section-body > .pc-heading {
+  margin: 1.5rem 0 0.75rem;
+  font-size: var(--text-card-title);
+}
+
+.pc-list {
+  max-width: var(--measure);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.pc-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.75rem;
+  padding: 0.625rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.pc-name {
+  font-weight: 600;
+}
+
+.pc-affil {
+  font-size: 0.9375rem;
+  color: var(--ink-muted);
 }
 
 /* Policies */
